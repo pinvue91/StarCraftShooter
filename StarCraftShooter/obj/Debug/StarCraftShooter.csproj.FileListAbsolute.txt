@@ -1,0 +1,7 @@
+C:\Users\pin\source\repos\StarCraftShooter\StarCraftShooter\bin\Debug\StarCraftShooter.exe.config
+C:\Users\pin\source\repos\StarCraftShooter\StarCraftShooter\bin\Debug\StarCraftShooter.exe
+C:\Users\pin\source\repos\StarCraftShooter\StarCraftShooter\bin\Debug\StarCraftShooter.pdb
+C:\Users\pin\source\repos\StarCraftShooter\StarCraftShooter\obj\Debug\StarCraftShooter.csprojAssemblyReference.cache
+C:\Users\pin\source\repos\StarCraftShooter\StarCraftShooter\obj\Debug\StarCraftShooter.csproj.CoreCompileInputs.cache
+C:\Users\pin\source\repos\StarCraftShooter\StarCraftShooter\obj\Debug\StarCraftShooter.exe
+C:\Users\pin\source\repos\StarCraftShooter\StarCraftShooter\obj\Debug\StarCraftShooter.pdb

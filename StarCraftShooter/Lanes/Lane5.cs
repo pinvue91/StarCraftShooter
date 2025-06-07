@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace StarCraftShooter.Lanes
+{
+    public class Lane5 : ILane
+    {
+        public int LeftPositionStart { get; set; } = 130;
+        public int TopPositionStart { get; set; } = 5;
+    }
+}

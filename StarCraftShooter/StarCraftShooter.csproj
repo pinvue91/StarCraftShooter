@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EFB109BB-BA6C-40E2-8D02-01A23BCDB2AF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>StarCraftShooter</RootNamespace>
+    <AssemblyName>StarCraftShooter</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enums\EnemyRequestEnum.cs" />
+    <Compile Include="Factories\EnemyFactory.cs" />
+    <Compile Include="Enums\SpawnLanesEnum.cs" />
+    <Compile Include="Factories\EnemyFactoryRequest.cs" />
+    <Compile Include="Factories\IEnemyFactory.cs" />
+    <Compile Include="GameObjects\Missiles\InterceptorMissile.cs" />
+    <Compile Include="GameObjects\Missiles\IEnemyMissile.cs" />
+    <Compile Include="GameObjects\Missiles\IPlayerMissile.cs" />
+    <Compile Include="GameObjects\Missiles\CorsairMissile.cs" />
+    <Compile Include="Lanes\ILane.cs" />
+    <Compile Include="Lanes\CustomLane.cs" />
+    <Compile Include="Lanes\Lane5.cs" />
+    <Compile Include="Lanes\Lane4.cs" />
+    <Compile Include="Lanes\Lane3.cs" />
+    <Compile Include="Lanes\Lane2.cs" />
+    <Compile Include="Lanes\Lane1.cs" />
+    <Compile Include="Managers\IMissileManager.cs" />
+    <Compile Include="SpawnLanesDictionary.cs" />
+    <Compile Include="Managers\CursorManager.cs" />
+    <Compile Include="EnemyUnits\Carrier.cs" />
+    <Compile Include="EnemyUnits\Corsair.cs" />
+    <Compile Include="Managers\IEnemyUnitsManager.cs" />
+    <Compile Include="Managers\EnemyUnitsManager.cs" />
+    <Compile Include="Enums\Direction.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="EnemyUnits\Interceptor.cs" />
+    <Compile Include="EnemyUnits\Scout.cs" />
+    <Compile Include="EnemyUnits\IEnemy.cs" />
+    <Compile Include="GameObjects\Missiles\ScoutMissile.cs" />
+    <Compile Include="Managers\MissileManager.cs" />
+    <Compile Include="GameObjects\Missiles\PlayerMissile.cs" />
+    <Compile Include="Levels\ILevel.cs" />
+    <Compile Include="GameObjects\Missiles\Missile.cs" />
+    <Compile Include="Levels\Level1.cs" />
+    <Compile Include="Player\Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
